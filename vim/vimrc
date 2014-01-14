@@ -17,8 +17,14 @@ set scrolloff=3 " maintain context around the cursor when scrolling
 "set list listchars=tab:»·,trail:·,extends:…,nbsp:‗
 set autochdir
 
-colorscheme desert
-set guifont=Inconsolata\ 16
 syntax on
 filetype on
 filetype plugin indent on
+colorscheme desert
+set guifont=Inconsolata\ 16
+set guioptions-=m
+set guioptions-=T
+set guioptions-=l
+set guioptions-=L
+set guioptions-=r
+set guioptions-=R
