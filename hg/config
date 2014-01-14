@@ -1,0 +1,8 @@
+[ui]
+username = Stephane Sezer <sas@cd80.net>
+
+[extensions]
+hgk =
+mq =
+hgext.color =
+histedit = /usr/lib/python2.7/site-packages/hg_histedit.py

@@ -1,0 +1,51 @@
+CheckHostIP no
+Compression yes
+HashKnownHosts no
+ServerAliveInterval 30
+HostKeyAlgorithms ssh-rsa,ssh-dss
+AddressFamily inet
+
+# perso
+Host futex *-vm
+  IdentityFile ~/Documents/keys/ssh/shell.priv
+  ForwardAgent yes
+Host futex
+  User sas
+  HostName futex.cd80.net
+Host *-vm
+  User user
+  HostName sas-%h.local
+
+# vcs
+Host github.com bitbucket.org git.lse.epita.fr
+  IdentityFile ~/Documents/keys/ssh/vcs.priv
+
+# vcake
+Host oven plate protein-style whooper gorilla jiffypop
+  User root
+  HostName %h.virtualcake.net
+  IdentityFile ~/Documents/keys/ssh/vcake.priv
+
+# cd80
+Host mmap munmap
+  User root
+  HostName %h.cd80.net
+  IdentityFile ~/Documents/keys/ssh/cd80.priv
+
+# fsfe
+Host gcc60
+  Port 9200
+Host gcc61
+  Port 9201
+Host gcc62
+  Port 9202
+Host gcc63
+  Port 9203
+Host gcc64
+  Port 9204
+Host gcc66
+  Port 9206
+Host gcc*
+  User thrashboul
+  HostName %h.fsffrance.org
+  IdentityFile ~/Documents/keys/ssh/fsfe.priv

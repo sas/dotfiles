@@ -1,0 +1,21 @@
+[user]
+	name = Stephane Sezer
+	email = sas@cd80.net
+
+[core]
+	excludesfile = ~/.gitignore
+
+[push]
+	default = tracking
+
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+
+[rerere]
+	enabled = true

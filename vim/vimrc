@@ -1,0 +1,24 @@
+set nocompatible " disable vi mode
+set backspace=2 " backspace configuration
+set number " line numbers on the left
+set autoindent
+set smartindent
+set nohlsearch " do not highlight search results
+set incsearch " move cursor while typing search pattern
+set showcmd " show commands while typing them
+set laststatus=2 " always display the status bar
+set statusline=[%02n]\ %f\ %(\[%M%R%H]%)\ %y\ %{''.&fileencoding}\ %=\ %4l,%02c%2V\ %P%*
+set splitbelow " new split buffers are below the current one
+set splitright " new vertical split buffer are on the right of the current one
+set history=1000 " bigger history
+set wildmenu " display a menu when hitting <TAB>
+set wildmode=longest:full " display wildmenu even with commands
+set scrolloff=3 " maintain context around the cursor when scrolling
+"set list listchars=tab:»·,trail:·,extends:…,nbsp:‗
+set autochdir
+
+colorscheme desert
+set guifont=Inconsolata\ 16
+syntax on
+filetype on
+filetype plugin indent on
