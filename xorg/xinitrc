@@ -1,0 +1,6 @@
+for f in ~/Source/dotfiles/xorg/*.xrdb; do
+  xrdb -merge "$f"
+done
+
+pulseaudio --start
+exec i3

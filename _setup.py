@@ -18,6 +18,7 @@ links = {
     ".vimrc":           "vim/vimrc",
     ".ssh":             "ssh",
     ".vim":             "vim",
+    ".xinitrc":         "xorg/xinitrc",
 }
 
 def _delete_path(path):
