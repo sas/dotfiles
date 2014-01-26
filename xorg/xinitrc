@@ -2,5 +2,7 @@ for f in ~/Source/dotfiles/xorg/*.xrdb; do
   xrdb -merge "$f"
 done
 
+setxkbmap -option compose:ralt
+
 pulseaudio --start
 exec i3
