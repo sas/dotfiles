@@ -73,10 +73,6 @@ set $wspace3 3:gamma
 set $wspace4 4:delta
 set $wspace5 5:epsilon
 
-bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 5
-bindsym XF86MonBrightnessUp   exec --no-startup-id xbacklight -inc 5
 bindsym XF86AudioMute         exec --no-startup-id pamixer --toggle-mute
 bindsym XF86AudioLowerVolume  exec --no-startup-id pamixer --decrease 5
 bindsym XF86AudioRaiseVolume  exec --no-startup-id pamixer --increase 5
-bindsym XF86KbdBrightnessDown exec --no-startup-id kbdlight down
-bindsym XF86KbdBrightnessUp   exec --no-startup-id kbdlight up
