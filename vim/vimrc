@@ -21,6 +21,7 @@ syntax on
 filetype on
 filetype plugin indent on
 colorscheme desert
+
 set guifont=Inconsolata\ 16
 set guioptions-=m
 set guioptions-=T
@@ -28,3 +29,6 @@ set guioptions-=l
 set guioptions-=L
 set guioptions-=r
 set guioptions-=R
+
+let vimpager_scrolloff=0
+let vimpager_passthrough=1
