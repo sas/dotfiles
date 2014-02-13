@@ -6,14 +6,14 @@ HostKeyAlgorithms ssh-rsa,ssh-dss
 AddressFamily inet
 
 # perso
-Host futex *-vm
-  IdentityFile ~/Documents/keys/ssh/shell.priv
-  ForwardAgent yes
 Host futex
   User sas
   HostName futex.cd80.net
+  IdentityFile ~/Documents/keys/ssh/shell.priv
+  ForwardAgent yes
 Host *-vm
   User user
+  IdentityFile ~/Documents/keys/ssh/vms.priv
   HostName sas-%h.local
 
 # vcs
