@@ -25,7 +25,6 @@ BCYN="\[\033[46m\]" # background cyan
 BWHT="\[\033[47m\]" # background white
 
 export PS1="$FRED[$RS$FGRN\u@\h$RS $FBLE\w$RS$FYEL\$(__git_ps1_callback)$RS$FRED]$RS "
-export PATH="$HOME/bin:$PATH"
 
 shopt -u interactive_comments
 shopt -s nullglob
