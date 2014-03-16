@@ -13,8 +13,9 @@ Host futex
   ForwardAgent yes
 Host *-vm
   User user
-  IdentityFile ~/Documents/keys/ssh/vms.priv
   HostName sas-%h.local
+  IdentityFile ~/Documents/keys/ssh/vms.priv
+  ForwardAgent yes
 
 # vcs
 Host github.com bitbucket.org git.lse.epita.fr
