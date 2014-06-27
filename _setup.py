@@ -8,17 +8,17 @@ homedir = os.environ["HOME"]
 confdir = os.path.realpath(os.path.dirname(sys.argv[0]))
 
 links = {
-    ".bashrc":          "bash/main.sh",
-    ".bash_login":      "bash/main.sh",
-    ".gitconfig":       "git/config",
-    ".gitignore":       "git/ignore",
-    ".hgrc":            "hg/config",
-    ".i3":              "i3",
-    ".i3status.conf":   "i3/status",
-    ".vimrc":           "vim/vimrc",
-    ".ssh":             "ssh",
-    ".vim":             "vim",
-    ".xinitrc":         "xorg/xinitrc",
+    ".bash_login":          "bash/main.sh",
+    ".bashrc":              "bash/main.sh",
+    ".gitconfig":           "git/config",
+    ".gitignore":           "git/ignore",
+    ".hgrc":                "hg/config",
+    ".i3":                  "i3",
+    ".i3status.conf":       "i3/status",
+    ".ssh":                 "ssh",
+    ".vim/bundle/vundle":   "vim/vundle",
+    ".vimrc":               "vim/vimrc",
+    ".xinitrc":             "xorg/xinitrc",
 }
 
 def _delete_path(path):

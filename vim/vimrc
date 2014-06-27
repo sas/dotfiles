@@ -3,7 +3,6 @@ set backspace=2 " backspace configuration
 set number " line numbers on the left
 set autoindent
 set smartindent
-set nohlsearch " do not highlight search results
 set incsearch " move cursor while typing search pattern
 set showcmd " show commands while typing them
 set laststatus=2 " always display the status bar
@@ -14,13 +13,8 @@ set history=1000 " bigger history
 set wildmenu " display a menu when hitting <TAB>
 set wildmode=longest:full " display wildmenu even with commands
 set scrolloff=3 " maintain context around the cursor when scrolling
-"set list listchars=tab:»·,trail:·,extends:…,nbsp:‗
-set autochdir
-
+set list listchars=tab:»·,trail:·,extends:…,nbsp:‗ " indicate spaces spaces
 syntax on
-filetype on
-filetype plugin indent on
-colorscheme desert
 
 set guifont=Inconsolata\ 16
 set guioptions-=m
@@ -30,5 +24,32 @@ set guioptions-=L
 set guioptions-=r
 set guioptions-=R
 
-let vimpager_scrolloff=0
-let vimpager_passthrough=1
+set runtimepath+=~/.vim/bundle/vundle " source vundle
+filetype off " hack for vundle to handle `after` dirs correctly
+call vundle#rc() " initialize vundle before loading plugins
+
+Plugin 'gmarik/vundle'
+
+Plugin 'Rip-Rip/clang_complete'
+let g:clang_complete_macros=1
+
+Plugin 'tpope/vim-fugitive'
+
+Plugin 'scrooloose/nerdtree'
+
+Plugin 'altercation/vim-colors-solarized'
+set background=dark
+colorscheme solarized
+
+Plugin 'rking/ag.vim'
+
+Plugin 'airblade/vim-rooter'
+let g:rooter_use_lcd=1
+let g:rooter_change_directory_for_non_project_files=1
+autocmd BufEnter * :Rooter
+
+Plugin 'myusuf3/numbers.vim'
+
+Plugin 'roman/golden-ratio'
+
+filetype plugin indent on " reenable filetype stuff after vundle is done
