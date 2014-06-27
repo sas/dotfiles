@@ -49,6 +49,7 @@ def links_create(force):
                 _delete_path(dst)
 
         print("linking  %s -> %s" % (dst, src))
+        os.makedirs(os.path.dirname(dst), exist_ok=True)
         os.symlink(src, dst)
 
 def links_remove():
