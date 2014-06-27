@@ -1,7 +1,7 @@
 export FULLNAME="Stephane Sezer"
 export EMAIL="sas@cd80.net"
-export EDITOR="vim"
-export PAGER="vimpager"
+command -v vim      >/dev/null 2>&1 && export EDITOR="vim"
+command -v vimpager >/dev/null 2>&1 && export PAGER="vimpager"
 
 RS="\[\033[0m\]"    # reset
 HC="\[\033[1m\]"    # hicolor
