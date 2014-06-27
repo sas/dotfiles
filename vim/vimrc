@@ -4,6 +4,7 @@ set number " line numbers on the left
 set autoindent
 set smartindent
 set incsearch " move cursor while typing search pattern
+set smartcase
 set showcmd " show commands while typing them
 set laststatus=2 " always display the status bar
 set statusline=[%02n]\ %f\ %(\[%M%R%H]%)\ %y\ %{''.&fileencoding}\ %=\ %4l,%02c%2V\ %P%*
