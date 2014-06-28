@@ -66,6 +66,4 @@ autocmd BufEnter * :Rooter
 
 Plugin 'myusuf3/numbers.vim'
 
-Plugin 'roman/golden-ratio'
-
 filetype plugin indent on " reenable filetype stuff after vundle is done
