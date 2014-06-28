@@ -25,6 +25,10 @@ set guioptions-=L
 set guioptions-=r
 set guioptions-=R
 
+set expandtab
+set sw=2
+set sts=2
+
 set runtimepath+=~/.vim/bundle/vundle " source vundle
 filetype off " hack for vundle to handle `after` dirs correctly
 call vundle#rc() " initialize vundle before loading plugins
