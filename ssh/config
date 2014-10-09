@@ -4,7 +4,6 @@ HashKnownHosts no
 ServerAliveInterval 30
 HostKeyAlgorithms ssh-rsa,ssh-dss
 AddressFamily inet
-IdentityFile ~/Documents/keys/ssh/id_rsa
 
 # fsfe
 Host gcc60

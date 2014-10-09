@@ -1,10 +1,3 @@
-_ssh_keys_root="$HOME/Documents/keys/ssh"
-
-sa()  { [ $# -eq 1 ] || return 1; ssh-add -t 45m $_ssh_keys_root/"$1".priv; }
-sau() { [ $# -eq 1 ] || return 1; ssh-add $_ssh_keys_root/"$1".priv; }
-sad() { [ $# -eq 1 ] || return 1; ssh-add -d $_ssh_keys_root/"$1".pub; }
-sal() { [ $# -eq 0 ] || return 1; ssh-add -l; }
-
 ssht()  { ssh -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no "$@"; }
 sshtr() { ssht -l root "$@"; }
 sshi()  { ssh -T "$@" /bin/sh -i; }
