@@ -4,34 +4,7 @@ HashKnownHosts no
 ServerAliveInterval 30
 HostKeyAlgorithms ssh-rsa,ssh-dss
 AddressFamily inet
-
-# perso
-Host futex
-  User sas
-  HostName futex.cd80.net
-  IdentityFile ~/Documents/keys/ssh/shell.priv
-  ForwardAgent yes
-Host *-vm
-  User user
-  HostName sas-%h.local
-  IdentityFile ~/Documents/keys/ssh/vms.priv
-  ForwardAgent yes
-
-# vcs
-Host github.com bitbucket.org git.lse.epita.fr
-  IdentityFile ~/Documents/keys/ssh/vcs.priv
-
-# vcake
-Host oven plate protein-style whooper gorilla jiffypop
-  User root
-  HostName %h.virtualcake.net
-  IdentityFile ~/Documents/keys/ssh/vcake.priv
-
-# cd80
-Host mmap munmap
-  User root
-  HostName %h.cd80.net
-  IdentityFile ~/Documents/keys/ssh/cd80.priv
+IdentityFile ~/Documents/keys/ssh/id_rsa
 
 # fsfe
 Host gcc60
