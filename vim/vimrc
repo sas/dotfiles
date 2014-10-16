@@ -43,8 +43,6 @@ let g:clang_complete_macros=1
 
 Plugin 'tpope/vim-fugitive'
 
-Plugin 'scrooloose/nerdtree'
-
 Plugin 'altercation/vim-colors-solarized'
 set background=dark
 colorscheme solarized
