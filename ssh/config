@@ -5,6 +5,11 @@ ServerAliveInterval 30
 HostKeyAlgorithms ssh-rsa,ssh-dss
 AddressFamily inet
 
+# vms
+Host *-vm
+    User user
+    HostName sas-%h.local
+
 # fsfe
 Host gcc60
   Port 9200
