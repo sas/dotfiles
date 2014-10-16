@@ -4,6 +4,7 @@ set number " line numbers on the left
 set autoindent
 set smartindent
 set incsearch " move cursor while typing search pattern
+set hlsearch
 set smartcase
 set showcmd " show commands while typing them
 set laststatus=2 " always display the status bar
@@ -28,6 +29,8 @@ set guioptions-=R
 set expandtab
 set sw=2
 set sts=2
+
+nnoremap <C-l> :nohlsearch<CR><C-l>
 
 set runtimepath+=~/.vim/bundle/vundle " source vundle
 filetype off " hack for vundle to handle `after` dirs correctly
