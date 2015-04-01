@@ -5,6 +5,10 @@ ServerAliveInterval 30
 HostKeyAlgorithms ssh-rsa,ssh-dss
 AddressFamily inet
 
+ControlPath ~/.ssh/control/%r@%h:%p
+ControlMaster auto
+ControlPersist 10m
+
 # vms
 Host *-vm
     User user
