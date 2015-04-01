@@ -38,9 +38,6 @@ call vundle#rc() " initialize vundle before loading plugins
 
 Plugin 'gmarik/vundle'
 
-Plugin 'Rip-Rip/clang_complete'
-let g:clang_complete_macros=1
-
 Plugin 'tpope/vim-fugitive'
 
 Plugin 'altercation/vim-colors-solarized'
