@@ -10,6 +10,7 @@ confdir = os.path.realpath(os.path.dirname(sys.argv[0]))
 links = {
     ".bash_login":          "bash/main.sh",
     ".bashrc":              "bash/main.sh",
+    ".dir_colors":          "coreutils/dircolors-solarized/dircolors.256dark",
     ".gitconfig":           "git/config",
     ".gitignore":           "git/ignore",
     ".hgrc":                "hg/config",
