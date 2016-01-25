@@ -26,7 +26,7 @@ __git_current_branch()
 {
   [ $# -le 1 ] || return 1
   __git_is_repo "$1" || return 1
-  __git_run_subdir "$1" git branch | grep '^*' | awk '{ print $2 }' | tr -d '()'
+  __git_run_subdir "$1" git branch | grep '^*' | sed -e 's,\*[[:space:]]*,,' | tr -d '()'
 }
 
 __git_ps1_callback()
