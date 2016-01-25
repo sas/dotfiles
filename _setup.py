@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 import os
 import shutil
@@ -52,7 +52,8 @@ def links_create(force):
                 _delete_path(dst)
 
         print("linking  %s -> %s" % (dst, src))
-        os.makedirs(os.path.dirname(dst), exist_ok=True)
+        if not os.path.exists(os.path.dirname(dst)):
+            os.makedirs(os.path.dirname(dst))
         os.symlink(src, dst)
 
 def links_remove():
