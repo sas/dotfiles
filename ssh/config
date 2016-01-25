@@ -3,7 +3,6 @@ Compression yes
 HashKnownHosts no
 ServerAliveInterval 30
 HostKeyAlgorithms ssh-rsa,ssh-dss
-AddressFamily inet
 
 ControlPath ~/.ssh/control/%r@%h:%p
 ControlMaster auto
