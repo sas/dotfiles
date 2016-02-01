@@ -38,9 +38,13 @@ Plugin 'gmarik/vundle'
 
 Plugin 'tpope/vim-fugitive'
 
-Plugin 'altercation/vim-colors-solarized'
-set background=dark
-colorscheme solarized
+if has("gui_running")
+  Plugin 'altercation/vim-colors-solarized'
+  set background=dark
+  colorscheme solarized
+else
+  colorscheme desert
+endif
 
 Plugin 'yssl/QFEnter'
 let g:qfenter_open_map = ['o']
