@@ -35,4 +35,17 @@ __git_ps1_callback()
   echo " ($(__git_current_branch .))"
 }
 
+git-merges-cleanly()
+{
+  [ $# -eq 1 ] || return 1
+  __git_is_repo . || return 1
+  if [ "$(git rev-parse HEAD)" = "$(git merge-base HEAD "$1")" ]; then
+    echo "yes"
+    return 0
+  else
+    echo "no"
+    return 1
+  fi
+}
+
 alias gg='git grep -n'
