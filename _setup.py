@@ -16,6 +16,7 @@ links = {
     ".hgrc":                "hg/config",
     ".i3":                  "i3",
     ".i3status.conf":       "i3/status",
+    ".lldbinit":            "lldb/lldbinit",
     ".ssh/authorized_keys": "ssh/authorized_keys",
     ".ssh/config":          "ssh/config",
     ".ssh/known_hosts":     "ssh/known_hosts",
