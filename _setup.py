@@ -8,7 +8,9 @@ homedir = os.environ["HOME"]
 confdir = os.path.realpath(os.path.dirname(sys.argv[0]))
 
 links = {
-    ".bash_login":          "bash/main.sh",
+    ".bash_login":          "/dev/null",
+    ".bash_logout":         "/dev/null",
+    ".bash_profile":        "bash/main.sh",
     ".bashrc":              "bash/main.sh",
     ".dir_colors":          "coreutils/dircolors-solarized/dircolors.256dark",
     ".gitconfig":           "git/config",
