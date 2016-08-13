@@ -34,7 +34,10 @@ def _delete_path(path):
             continue
 
 def _conf_path(path):
-    return os.path.join(confdir, path)
+    if path[0] == '/':
+        return path
+    else:
+        return os.path.join(confdir, path)
 
 def _home_path(path):
     return os.path.join(homedir, path)
