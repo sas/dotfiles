@@ -28,6 +28,7 @@ export PS1="$FRED[$RS$FGRN\u@\h$RS $FBLE\w$RS$FYEL\$(__git_ps1_callback)$RS$FRED
 
 shopt -u interactive_comments
 shopt -s nullglob
+shopt -s checkwinsize
 set -o noclobber
 
 for d in all by-system/$(uname -s) by-nodename/$(uname -n); do
