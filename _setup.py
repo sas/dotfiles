@@ -49,6 +49,9 @@ def links_create(force):
         dst = _home_path(f)
         src = _conf_path(links[f])
 
+        if os.path.islink(dst) and os.readlink(dst) == src:
+            continue
+
         if os.access(dst, os.F_OK):
             if not force:
                 print("skipping %s" % dst)
