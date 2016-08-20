@@ -5,6 +5,7 @@ set autoindent
 set smartindent
 set incsearch " move cursor while typing search pattern
 set hlsearch
+set ignorecase
 set smartcase
 set showcmd " show commands while typing them
 set laststatus=2 " always display the status bar
