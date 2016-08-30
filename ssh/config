@@ -1,17 +1,7 @@
-CheckHostIP no
-Compression yes
-HashKnownHosts no
-ServerAliveInterval 30
-HostKeyAlgorithms ssh-rsa,ssh-dss
-
-ControlPath ~/.ssh/control/%r@%h:%p
-ControlMaster auto
-ControlPersist 10m
-
 # vms
 Host *-vm
-    User user
-    HostName sas-%h.local
+  User user
+  HostName sas-%h.local
 
 # fsfe
 Host gcc60
@@ -30,3 +20,14 @@ Host gcc*
   User thrashboul
   HostName %h.fsffrance.org
   IdentityFile ~/Documents/keys/ssh/fsfe.priv
+
+Host *
+  CheckHostIP no
+  Compression yes
+  HashKnownHosts no
+  ServerAliveInterval 30
+  HostKeyAlgorithms ssh-rsa,ssh-dss
+
+  ControlPath ~/.ssh/control/%r@%h:%p
+  ControlMaster auto
+  ControlPersist 10m
