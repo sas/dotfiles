@@ -23,10 +23,11 @@ Host gcc*
 
 Host *
   CheckHostIP no
-  Compression yes
   HashKnownHosts no
-  ServerAliveInterval 30
   HostKeyAlgorithms ssh-rsa,ssh-dss
+
+  Compression yes
+  ServerAliveInterval 30
 
   ControlPath ~/.ssh/control/%r@%h:%p
   ControlMaster auto
