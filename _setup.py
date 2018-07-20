@@ -22,7 +22,7 @@ links = {
     ".ssh/authorized_keys": "ssh/authorized_keys",
     ".ssh/config":          "ssh/config",
     ".ssh/known_hosts":     "ssh/known_hosts",
-    ".vim/bundle/vundle":   "vim/vundle",
+    ".vim/pack":            "vim/pack",
     ".vimrc":               "vim/vimrc",
     ".xinitrc":             "xorg/xinitrc",
 }

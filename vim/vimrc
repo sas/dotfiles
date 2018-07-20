@@ -31,23 +31,9 @@ set expandtab
 set sw=2
 set sts=2
 
-set runtimepath+=~/.vim/bundle/vundle " source vundle
-filetype off " hack for vundle to handle `after` dirs correctly
-call vundle#rc() " initialize vundle before loading plugins
+nnoremap <C-l> :nohlsearch<CR>:Rooter<CR><C-l>
 
-Plugin 'gmarik/vundle'
-
-Plugin 'tpope/vim-fugitive'
-
-if has("gui_running")
-  Plugin 'altercation/vim-colors-solarized'
-  set background=dark
-  colorscheme solarized
-else
-  colorscheme desert
-endif
-
-Plugin 'yssl/QFEnter'
+" QFEnter settings
 let g:qfenter_open_map = ['o']
 let g:qfenter_vopen_map = ['v']
 let g:qfenter_hopen_map = ['h']
@@ -56,17 +42,6 @@ autocmd BufReadPost quickfix nmap <buffer> q <C-w>p:cclose<CR>
 autocmd BufReadPost quickfix nmap <buffer> <CR> o<C-w>p
 autocmd BufReadPost quickfix nmap <buffer> <Tab> v:cclose<CR>
 
-Plugin 'rking/ag.vim'
+" Ag settings
 let g:ag_apply_lmappings=0
 let g:ag_apply_qmappings=0
-nmap <C-\><C-\> :Rooter<CR>:Ag!<CR>
-
-Plugin 'airblade/vim-rooter'
-let g:rooter_change_directory_for_non_project_files=1
-autocmd BufEnter * :Rooter
-
-Plugin 'myusuf3/numbers.vim'
-
-filetype plugin indent on " reenable filetype stuff after vundle is done
-
-nnoremap <C-l> :nohlsearch<CR>:Rooter<CR><C-l>
