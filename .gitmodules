@@ -28,3 +28,6 @@
 [submodule "vim/pack/search/start/fzf.vim"]
 	path = vim/pack/search/start/fzf.vim
 	url = https://github.com/junegunn/fzf.vim
+[submodule "vim/pack/search/start/nerdtree"]
+	path = vim/pack/search/start/nerdtree
+	url = https://github.com/scrooloose/nerdtree

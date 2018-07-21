@@ -49,3 +49,7 @@ let g:ag_apply_qmappings=0
 " FZF settings
 nnoremap <C-f> :Files<CR>
 nnoremap <C-g> :Lines<CR>
+
+" NERDTree settings
+nnoremap <C-t> :NERDTreeToggle<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
