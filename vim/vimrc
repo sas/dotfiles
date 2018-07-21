@@ -48,7 +48,8 @@ let g:ag_apply_qmappings=0
 
 " FZF settings
 nnoremap <C-f> :Files<CR>
-nnoremap <C-g> :Lines<CR>
+nnoremap <C-g> :Ag<CR>
+nnoremap <C-\><C-\> :exe 'Ag '.expand('<cword>')<CR>
 
 " NERDTree settings
 nnoremap <C-t> :NERDTreeToggle<CR>
