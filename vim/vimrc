@@ -1,24 +1,21 @@
-set nocompatible " disable vi mode
-set backspace=2 " backspace configuration
+" Disable vi mode
+set nocompatible
+
+" UI options
 set number " line numbers on the left
-set autoindent
-set smartindent
-set incsearch " move cursor while typing search pattern
-set hlsearch
-set ignorecase
-set smartcase
 set showcmd " show commands while typing them
 set laststatus=2 " always display the status bar
 set statusline=[%02n]\ %f\ %(\[%M%R%H]%)\ %y\ %{''.&fileencoding}\ %=\ %4l,%02c%2V\ %P%*
 set splitbelow " new split buffers are below the current one
 set splitright " new vertical split buffer are on the right of the current one
-set history=1000 " bigger history
 set wildmenu " display a menu when hitting <TAB>
 set wildmode=longest:full " display wildmenu even with commands
 set scrolloff=3 " maintain context around the cursor when scrolling
 set list listchars=tab:»·,trail:·,extends:…,nbsp:‗ " indicate spaces spaces
-syntax on
+set history=1000 " bigger history
+colorscheme solarized
 
+" GUI options
 set guifont=guifont=Monaco:h10
 set guioptions-=m
 set guioptions-=T
@@ -27,9 +24,22 @@ set guioptions-=L
 set guioptions-=r
 set guioptions-=R
 
+" Search options
+set incsearch " move cursor while typing search pattern
+set hlsearch
+set ignorecase
+set smartcase
+
+" Text editing options
 set expandtab
-set sw=2
-set sts=2
+set tabstop=8
+set shiftwidth=2
+set softtabstop=2
+set backspace=2 " backspace configuration
+set autoindent
+set smartindent
+syntax on
+filetype plugin indent on
 
 nnoremap <C-l> :nohlsearch<CR>:Rooter<CR><C-l>
 
