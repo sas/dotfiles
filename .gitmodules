@@ -31,3 +31,6 @@
 [submodule "vim/pack/colors/start/vim-pink-moon"]
 	path = vim/pack/colors/start/vim-pink-moon
 	url = https://github.com/sts10/vim-pink-moon
+[submodule "vim/pack/colors/start/vim-monokai"]
+	path = vim/pack/colors/start/vim-monokai
+	url = https://github.com/sickill/vim-monokai

@@ -13,7 +13,7 @@ set wildmode=longest:full " display wildmenu even with commands
 set scrolloff=3 " maintain context around the cursor when scrolling
 set list listchars=tab:»·,trail:·,extends:…,nbsp:‗ " indicate spaces spaces
 set history=1000 " bigger history
-colorscheme pink-moon
+colorscheme monokai
 
 " GUI options
 set guifont=guifont=Monaco:h10
