@@ -28,3 +28,6 @@
 [submodule "vim/pack/search/start/nerdtree"]
 	path = vim/pack/search/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree
+[submodule "vim/pack/colors/start/vim-pink-moon"]
+	path = vim/pack/colors/start/vim-pink-moon
+	url = https://github.com/sts10/vim-pink-moon
