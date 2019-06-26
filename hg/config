@@ -4,4 +4,4 @@ username = Stephane Sezer <sas@cd80.net>
 [extensions]
 hgk =
 mq =
-hgext.color =
+color =
