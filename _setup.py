@@ -22,6 +22,7 @@ links = {
     ".ssh/authorized_keys": "ssh/authorized_keys",
     ".ssh/config":          "ssh/config",
     ".ssh/known_hosts":     "ssh/known_hosts",
+    ".tmux.conf":           "tmux/tmux.conf",
     ".vim/pack":            "vim/pack",
     ".vimrc":               "vim/vimrc",
     ".xinitrc":             "xorg/xinitrc",
