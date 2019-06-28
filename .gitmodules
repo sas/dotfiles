@@ -34,3 +34,6 @@
 [submodule "vim/pack/colors/start/vim-monokai"]
 	path = vim/pack/colors/start/vim-monokai
 	url = https://github.com/sickill/vim-monokai
+[submodule "vim/pack/editor/start/thrift.vim"]
+	path = vim/pack/editor/start/thrift.vim
+	url = https://github.com/solarnz/thrift.vim
