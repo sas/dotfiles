@@ -1,8 +1,3 @@
-# vms
-Host *-vm
-  User user
-  HostName sas-%h.local
-
 # fsfe
 Host gcc60
   Port 9200
@@ -22,9 +17,7 @@ Host gcc*
   IdentityFile ~/Documents/keys/ssh/fsfe.priv
 
 Host *
-  CheckHostIP no
   HashKnownHosts no
-  HostKeyAlgorithms ssh-rsa,ssh-dss
 
   Compression yes
   ServerAliveInterval 30
