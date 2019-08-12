@@ -41,7 +41,7 @@ set smartindent
 syntax on
 filetype plugin indent on
 
-nnoremap <C-l> :nohlsearch<CR>:Rooter<CR><C-l>
+nnoremap <C-l> :nohlsearch<CR>
 
 " QFEnter settings
 let g:qfenter_open_map = ['o']
