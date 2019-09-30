@@ -53,7 +53,7 @@ def links_create(force):
         if os.path.islink(dst) and os.readlink(dst) == src:
             continue
 
-        if os.access(dst, os.F_OK):
+        if os.access(dst, os.F_OK, follow_symlinks=False):
             if not force:
                 print("skipping %s" % dst)
                 continue
