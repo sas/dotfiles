@@ -13,6 +13,7 @@ links = {
     ".bash_profile":        "bash/main.sh",
     ".bashrc":              "bash/main.sh",
     ".dir_colors":          "coreutils/dircolors-solarized/dircolors.256dark",
+    ".gdbinit":             "gdb/gdbinit",
     ".gitconfig":           "git/config",
     ".gitignore":           "git/ignore",
     ".hgrc":                "hg/config",
