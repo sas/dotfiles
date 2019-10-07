@@ -16,9 +16,6 @@
 [submodule "vim/pack/vcs/start/vim-fugitive"]
 	path = vim/pack/vcs/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
-[submodule "vim/pack/vcs/start/vim-rooter"]
-	path = vim/pack/vcs/start/vim-rooter
-	url = https://github.com/airblade/vim-rooter
 [submodule "vim/pack/search/start/fzf"]
 	path = vim/pack/search/start/fzf
 	url = https://github.com/junegunn/fzf
