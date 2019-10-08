@@ -17,6 +17,7 @@ links = {
     ".gitconfig":           "git/config",
     ".gitignore":           "git/ignore",
     ".hgrc":                "hg/config",
+    ".config/htop/htoprc":  "htop/htoprc",
     ".i3":                  "i3",
     ".i3status.conf":       "i3/status",
     ".lldbinit":            "lldb/lldbinit",
