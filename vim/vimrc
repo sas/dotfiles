@@ -16,6 +16,7 @@ set history=1000 " bigger history
 colorscheme monokai
 nmap [[ [{
 nmap ]] ]}
+cnoreabbrev <expr> W ((getcmdtype() is# ':' && getcmdline() is# 'W')?('w'):('W'))
 
 " GUI options
 set guifont=guifont=Monaco:h10
