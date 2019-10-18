@@ -46,15 +46,6 @@ filetype plugin indent on
 
 nnoremap <C-l> :nohlsearch<CR>
 
-" QFEnter settings
-let g:qfenter_open_map = ['o']
-let g:qfenter_vopen_map = ['v']
-let g:qfenter_hopen_map = ['h']
-let g:qfenter_topen_map = ['t']
-autocmd BufReadPost quickfix nmap <buffer> q <C-w>p:cclose<CR>
-autocmd BufReadPost quickfix nmap <buffer> <CR> o<C-w>p
-autocmd BufReadPost quickfix nmap <buffer> <Tab> v:cclose<CR>
-
 " FZF settings
 nnoremap <C-f> :Files<CR>
 nnoremap <C-g> :Ag<CR>
