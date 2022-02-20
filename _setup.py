@@ -24,7 +24,6 @@ links = {
     ".tmux.conf":           "tmux/tmux.conf",
     ".vim/pack":            "vim/pack",
     ".vimrc":               "vim/vimrc",
-    ".xinitrc":             "xorg/xinitrc",
 }
 
 def _delete_path(path):
