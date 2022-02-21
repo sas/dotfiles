@@ -1,7 +1,2 @@
 [ui]
 username = Stephane Sezer <sas@cd80.net>
-
-[extensions]
-hgk =
-mq =
-color =

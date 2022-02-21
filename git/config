@@ -15,9 +15,4 @@
 	status = auto
 
 [alias]
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
-	svn-rev = "!f() { git log master --grep="git-svn-id:.*trunk@${1/r/} "; }; f"
 	sshow = stash show -p
-
-[rerere]
-	enabled = true
