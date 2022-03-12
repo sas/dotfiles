@@ -25,3 +25,6 @@
 [submodule "vim/pack/colors/start/vim-monokai"]
 	path = vim/pack/colors/start/vim-monokai
 	url = https://github.com/sickill/vim-monokai
+[submodule "vim/pack/syntax/start/vim-solidity"]
+	path = vim/pack/syntax/start/vim-solidity
+	url = https://github.com/tomlion/vim-solidity
