@@ -16,3 +16,5 @@
 
 [alias]
 	sshow = stash show -p
+[init]
+	defaultBranch = master
